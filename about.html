@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - Islamabad Sightseeing</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <style>
+    /* Reset and base */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9fbfd;
+      margin: 0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: #1565c0;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      height: 60px;
+      max-width: 1100px;
+      margin: 30px auto 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    nav .brand {
+      font-weight: 700;
+      font-size: 1.6rem;
+      color: #fff;
+      user-select: none;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin-left: auto;
+      gap: 1.5rem;
+      padding-left: 0;
+    }
+    nav ul li a {
+      color: #cfe3fc;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      font-size: 1rem;
+      display: block;
+    }
+    nav ul li a:hover,
+    nav ul li a.active {
+      background-color: #0d47a1;
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(13, 71, 161, 0.4);
+    }
+
+    /* Header */
+    .about-header {
+      background: linear-gradient(135deg, #0d47a1, #1976d2);
+      color: white;
+      padding: 6rem 1rem 5rem;
+      text-align: center;
+      border-radius: 0 0 40px 40px;
+      max-width: 900px;
+      margin: 0 auto 3rem;
+      box-shadow: 0 8px 20px rgba(25, 118, 210, 0.3);
+    }
+    .about-header h1 {
+      font-size: 3.2rem;
+      font-weight: 900;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1.5px;
+    }
+    .about-header p {
+      font-size: 1.25rem;
+      font-weight: 500;
+      opacity: 0.85;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.4;
+    }
+
+    /* About Content */
+    .about-content {
+      background: #fff;
+      max-width: 900px;
+      margin: 0 auto 5rem;
+      padding: 3rem 2rem 4rem;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+    }
+    .about-content h2 {
+      font-size: 2.25rem;
+      margin-bottom: 1rem;
+      color: #1565c0;
+      border-bottom: 3px solid #1976d2;
+      padding-bottom: 0.4rem;
+      font-weight: 700;
+    }
+    .about-content p {
+      font-size: 1.15rem;
+      color: #444;
+      margin-bottom: 2rem;
+      font-weight: 400;
+      line-height: 1.8;
+    }
+
+    /* Mission Box */
+    .mission-box {
+      background: #e3f2fd;
+      border-left: 6px solid #1565c0;
+      padding: 2rem 2rem 2rem 2.5rem;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(21, 101, 192, 0.25);
+      transition: background-color 0.3s ease;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .mission-box:hover {
+      background-color: #bbdefb;
+    }
+    .mission-box h4 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: #0d47a1;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    .mission-box p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #0d47a1;
+      font-weight: 500;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 1rem 1.5rem;
+      }
+      nav ul {
+        width: 100%;
+        justify-content: center;
+        margin-top: 0.75rem;
+        gap: 1rem;
+      }
+      .about-header h1 {
+        font-size: 2.4rem;
+      }
+      .about-header p {
+        font-size: 1.1rem;
+      }
+      .about-content {
+        padding: 2rem 1.5rem 3rem;
+      }
+      .about-content h2 {
+        font-size: 1.8rem;
+      }
+      .mission-box {
+        padding: 1.5rem 1.5rem 1.5rem 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="brand">Islamabad Sightseeing</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="attractions.html">Attractions</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="about-header">
+    <h1>About Islamabad Sightseeing</h1>
+    <p>Discover the beauty, culture, and charm of the twin cities</p>
+  </header>
+
+  <section class="about-content">
+    <h2>Who We Are</h2>
+    <p>Islamabad Sightseeing is a tourism platform dedicated to showcasing the most captivating attractions in Islamabad and Rawalpindi. We provide guided tours, travel packages, and informative resources for locals and tourists alike.</p>
+
+    <h2>What We Offer</h2>
+    <p>From the serene Faisal Mosque to the vibrant Raja Bazaar, we help you explore iconic landmarks, hidden gems, local food spots, and adventure activities with ease and comfort. Our services include custom tour packages, group bookings, hotel suggestions, and more.</p>
+
+    <div class="mission-box">
+      <h4>Our Mission</h4>
+      <p>To promote tourism in the twin cities by offering reliable, safe, and enjoyable travel experiences. We aim to connect people with nature, history, and culture through curated tours and useful travel insights.</p>
+    </div>
+  </section>
+</body>
+</html>

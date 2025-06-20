@@ -1,0 +1,227 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Islamabad Sightseeing</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #e6f2fb;
+    }
+    /* Navbar */
+    .navbar {
+      background: #1681c2;
+      display: flex;
+      align-items: center;
+      padding: 0 32px;
+      height: 70px;
+      box-sizing: border-box;
+    }
+    .navbar-brand img {
+      height: 48px;
+      border-radius: 4px;
+      background: #fff;
+      padding: 2px;
+      margin-top: 6px;
+    }
+    .navbar-nav {
+      display: flex;
+      gap: 24px;
+      margin-left: auto;
+    }
+    .navbar-nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.08rem;
+      transition: color 0.2s;
+      padding: 4px 0;
+    }
+    .navbar-nav a.active, .navbar-nav a:hover {
+      text-decoration: underline;
+      color: #d6eaff;
+    }
+    /* Hero Section */
+    .hero-section {
+      text-align: center;
+      margin-top: 36px;
+      margin-bottom: 16px;
+    }
+    .hero-section h1 {
+      color: #183153;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .hero-section p {
+      color: #1681c2;
+      font-size: 1.15rem;
+      margin-top: 0;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+    .section-title {
+      color: #1681c2;
+      font-weight: 600;
+      font-size: 1.25rem;
+      margin-bottom: 24px;
+      margin-top: 24px;
+      text-align: left;
+    }
+    /* Attractions Grid */
+    .attractions-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(30, 64, 175, 0.09);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 260px;
+      border: 1px solid #e0eafc;
+    }
+    .card-img-top {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 14px 16px 10px 16px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-title {
+      font-size: 1.08rem;
+      font-weight: 600;
+      color: #1681c2;
+      margin-bottom: 6px;
+      margin-top: 0;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #1976d2;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 0 0 12px 12px;
+      max-width: 1200px;
+      margin: 0 auto 40px auto;
+    }
+
+    .card-text {
+      color: #3f4c6b;
+      font-size: 0.97rem;
+      flex: 1;
+      margin-bottom: 0;
+    }
+    /* 4th card next row left */
+    .attractions-grid .card:nth-child(4) {
+      grid-column: 1 / 2;
+    }
+    @media (max-width: 900px) {
+      .attractions-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .attractions-grid .card:nth-child(4) {
+        grid-column: 1 / 2;
+      }
+    }
+    @media (max-width: 600px) {
+      .attractions-grid {
+        grid-template-columns: 1fr;
+      }
+      .attractions-grid .card:nth-child(4) {
+        grid-column: auto;
+      }
+      .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 0 8px;
+      }
+      .navbar-nav {
+        margin-left: 0;
+        gap: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo.png" alt="Islamabad Sightseeing Logo" />
+    </a>
+    <div class="navbar-nav">
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About us</a>
+      <a href="attractions.html">Top Attractions</a>
+      <a href="admin_login.php">Admin</a>
+      <a href="contact.html">Contact</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="php/mybookings.php">My Booking</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <h1>Welcome to Islamabad Sightseeing</h1>
+    <p>Discover the beauty, culture, and adventures of Pakistan’s capital city.</p>
+  </section>
+
+  <!-- Top Attractions -->
+  <div class="container">
+    <h3 class="section-title">Top Attractions</h3>
+    <div class="attractions-grid">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="images/faisal-mosque.jpg" class="card-img-top" alt="Faisal Mosque" />
+        <div class="card-body">
+          <h5 class="card-title">Faisal Mosque</h5>
+          <p class="card-text">The largest mosque in Pakistan, known for its unique architecture and scenic location.</p>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="images/monument.jpg" class="card-img-top" alt="Pakistan Monument" />
+        <div class="card-body">
+          <h5 class="card-title">Pakistan Monument</h5>
+          <p class="card-text">Iconic national monument representing the four provinces of Pakistan.</p>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="images/daman-e-koh.jpg" class="card-img-top" alt="Daman-e-Koh" />
+        <div class="card-body">
+          <h5 class="card-title">Daman-e-Koh</h5>
+          <p class="card-text">Popular viewpoint offering panoramic views of Islamabad and the Margalla Hills.</p>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="card">
+        <img src="images/lok-virsa.jpg" class="card-img-top" alt="Lok Virsa Museum" />
+        <div class="card-body">
+          <h5 class="card-title">Lok Virsa Museum</h5>
+          <p class="card-text">Preserving Pakistan's cultural heritage through art, music, and history exhibits.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Islamabad Sightseeing. All rights reserved.</p>
+  </footer>
+</body>
+<script src="js/script.js"></script>
+</html>

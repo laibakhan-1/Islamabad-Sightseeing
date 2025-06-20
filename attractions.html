@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Top Attractions - Islamabad Sightseeing</title>
+  <style>
+    /* Reset and base */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e3f2fd; /* Light accessible blue */
+      color: #0d47a1; /* Dark navy blue text */
+      min-height: 100vh;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    /* Navbar */
+    nav {
+      background-color: #1976d2; /* Dark blue */
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      height: 60px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      max-width: 1200px;
+      margin: 20px auto 0 auto;
+      border-radius: 12px;
+    }
+    nav .brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #fff;
+      flex-shrink: 0;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      margin-left: auto;
+      padding-left: 0;
+    }
+    nav ul li a {
+      color: #bbdefb; /* Light blue text */
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      display: block;
+    }
+    nav ul li a.active,
+    nav ul li a:hover {
+      background-color: #0d47a1; /* Darker blue */
+      color: #fff;
+    }
+
+    /* Main container */
+    main {
+      max-width: 1200px;
+      margin: 30px auto 60px auto;
+      padding: 0 20px 40px 20px;
+    }
+    h1.page-title {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 36px;
+      text-align: center;
+      color: #0d47a1;
+    }
+
+    /* Each attraction section */
+    section.attraction {
+      background-color: white; /* lighter blue */
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-bottom: 36px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+      display: flex;
+      gap: 28px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    section.attraction h2 {
+      width: 100%;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+      color: #0d47a1;
+    }
+    section.attraction img {
+      width: 380px;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      flex-shrink: 0;
+    }
+    section.attraction .content {
+      flex: 1 1 400px;
+      color: #0d47a1;
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+    section.attraction .content p {
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+    section.attraction .content ul {
+      padding-left: 20px;
+      margin-top: 0;
+      margin-bottom: 0;
+      color: #0d47a1;
+    }
+    section.attraction .content ul li {
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+    section.attraction .content ul li strong {
+      color: #1565c0;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #1976d2;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 0 0 12px 12px;
+      max-width: 1200px;
+      margin: 0 auto 40px auto;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      section.attraction {
+        flex-direction: column;
+        align-items: center;
+      }
+      section.attraction img {
+        width: 100%;
+        max-width: 100%;
+        height: 200px;
+      }
+      section.attraction .content {
+        flex: unset;
+        width: 100%;
+      }
+    }
+    @media (max-width: 480px) {
+      nav ul {
+        gap: 10px;
+      }
+      nav .brand {
+        font-size: 1.3rem;
+      }
+      h1.page-title {
+        font-size: 2rem;
+        margin-bottom: 24px;
+      }
+      section.attraction h2 {
+        font-size: 1.6rem;
+      }
+      section.attraction img {
+        height: 160px;
+      }
+      section.attraction .content {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="brand">Islamabad Sightseeing</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="attractions.html" class="active">Attractions</a></li>
+      <li><a href="itineraries.html">Itineraries</a></li>
+      <li><a href="packages.php">Packages</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1 class="page-title">Top Attractions of Islamabad</h1>
+
+    <section id="faisal-mosque" class="attraction">
+      <h2>Faisal Mosque</h2>
+      <img src="images/faisal-mosque.jpg" alt="Faisal Mosque" />
+      <div class="content">
+        <p>The Faisal Mosque is the largest mosque in Pakistan, known for its unique and modern design. It is located at the foothills of the Margalla Hills.</p>
+        <ul>
+          <li><strong>Location:</strong> Sector F-5</li>
+          <li><strong>Opening Hours:</strong> 9 AM - 7 PM</li>
+          <li><strong>Entry Fees:</strong> Free</li>
+          <li><strong>Travel Tips:</strong> Dress modestly and visit during early morning or evening for best photos.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="pakistan-monument" class="attraction">
+      <h2>Pakistan Monument</h2>
+      <img src="images/monument.jpg" alt="Pakistan Monument" />
+      <div class="content">
+        <p>The Pakistan Monument symbolizes the four provinces and three territories of Pakistan. It is a popular spot for tourists and locals alike.</p>
+        <ul>
+          <li><strong>Location:</strong> Shakarparian Hills</li>
+          <li><strong>Opening Hours:</strong> 9 AM - 5 PM</li>
+          <li><strong>Entry Fees:</strong> PKR 20</li>
+          <li><strong>Travel Tips:</strong> Best visited during sunset for amazing views and photos.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="margalla-hills" class="attraction">
+      <h2>Margalla Hills National Park</h2>
+      <img src="images/margalla_hills.jpg" alt="Margalla Hills" />
+      <div class="content">
+        <p>Margalla Hills National Park offers hiking trails, picnic spots, and stunning views of Islamabad. It’s perfect for outdoor enthusiasts.</p>
+        <ul>
+          <li><strong>Location:</strong> North of Islamabad</li>
+          <li><strong>Opening Hours:</strong> 6 AM - 6 PM</li>
+          <li><strong>Entry Fees:</strong> Free</li>
+          <li><strong>Travel Tips:</strong> Wear hiking shoes and carry water; trails vary in difficulty.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Add more attractions here -->
+
+  </main>
+
+  <footer>
+    &copy; 2025 Islamabad Sightseeing. All rights reserved.
+  </footer>
+</body>
+</html>

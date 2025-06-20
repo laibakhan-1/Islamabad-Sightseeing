@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Itineraries - Islamabad Sightseeing</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e3f2fd;
+      color: #0d47a1;
+      min-height: 100vh;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    /* Navbar */
+    nav {
+      background-color: #1976d2;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      height: 60px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      max-width: 1200px;
+      margin: 20px auto 0 auto;
+      border-radius: 12px;
+    }
+    nav .brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #fff;
+      flex-shrink: 0;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      margin-left: auto;
+      padding-left: 0;
+    }
+    nav ul li a {
+      color: #bbdefb;
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      display: block;
+    }
+    nav ul li a.active,
+    nav ul li a:hover {
+      background-color: #0d47a1;
+      color: #fff;
+    }
+
+    /* Main container */
+    main {
+      max-width: 1200px;
+      margin: 30px auto 60px auto;
+      padding: 0 20px 40px 20px;
+    }
+    h1.page-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 36px;
+      text-align: center;
+      color: #0d47a1;
+    }
+
+    /* Itinerary cards */
+    article.itinerary-card {
+      background-color: white;
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-bottom: 36px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+      color: #0d47a1;
+      font-size: 1.12rem;
+    }
+    article.itinerary-card h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #0d47a1;
+      margin-bottom: 16px;
+      margin-top: 0;
+    }
+    article.itinerary-card ul {
+      padding-left: 22px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    article.itinerary-card ul li {
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #1976d2;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 0 0 12px 12px;
+      max-width: 1200px;
+      margin: 0 auto 40px auto;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      nav ul {
+        gap: 10px;
+      }
+      nav .brand {
+        font-size: 1.3rem;
+      }
+      main {
+        padding: 0 4vw 30px 4vw;
+      }
+      article.itinerary-card {
+        padding: 18px 10px;
+      }
+    }
+    @media (max-width: 480px) {
+      h1.page-title {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+      article.itinerary-card {
+        padding: 12px 4px;
+        font-size: 1rem;
+      }
+      article.itinerary-card h2 {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="brand">Islamabad Sightseeing</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="attractions.html">Attractions</a></li>
+      <li><a href="itineraries.html" class="active">Itineraries</a></li>
+      <li><a href="packages.php">Packages</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1 class="page-title">Tour Itineraries</h1>
+
+    <article class="itinerary-card">
+      <h2>One-Day Tour of Islamabad</h2>
+      <ul>
+        <li>Morning: Visit Faisal Mosque and Daman-e-Koh for panoramic city views.</li>
+        <li>Lunch: Enjoy local cuisine at Melody Food Park.</li>
+        <li>Afternoon: Explore Pakistan Monument and Lok Virsa Museum.</li>
+        <li>Evening: Relax at Rawal Lake or shop at Centaurus Mall.</li>
+      </ul>
+    </article>
+
+    <article class="itinerary-card">
+      <h2>Weekend Getaway</h2>
+      <ul>
+        <li>Day 1: Explore Islamabad attractions and Margalla Hills hiking trails.</li>
+        <li>Day 2: Visit Saidpur Village, cultural shows, and try local food.</li>
+      </ul>
+    </article>
+
+    <article class="itinerary-card">
+      <h2>Islamabad + Murree Combo Trip</h2>
+      <ul>
+        <li>Day 1: Islamabad sightseeing.</li>
+        <li>Day 2: Travel to Murree, visit Mall Road and Patriata.</li>
+        <li>Day 3: Return to Islamabad or continue exploring.</li>
+      </ul>
+    </article>
+  </main>
+
+  <footer>
+    &copy; 2025 Islamabad Sightseeing. All rights reserved.
+  </footer>
+</body>
+</html>
